@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*googleips 웹폰트 css 파일 불러오기*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+/*
+font-family: 'Noto Sans KR', sans-serif;
+*/
+/*font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Galada', cursive; */
+
+/* 저장된 글꼴 파일 선언*/
+/* @font-face { font-family : font_gothic;    
+                src : url(../font/NanumGothic.ttf); }  */
+/* 웹사이트의 글꼴 파일 선언*/
+/* @font-face { font-family : font_gothic;    
+                src : url(http://uhbee.com/nanum.eot) ; }   */
+
+
+* {margin:0; padding:0;}
+html{font-size:16px;}
+body{ font-size:16px;
+      color:#6f6f6f;
+      font-family: 'Nanum Gothic', sans-serif }
+ul, ol, li{list-style-type:none}
+img, fieldset{border:none;vertical-align: middle}
+hr {clear:both;border:none}
+a {color:inherit;text-decoration:none}
+table{border-collapse:collapse}
+input, textarea {color:inherit;font-size:inherit;
+       font-family:inherit;
+       vertical-align: middle}
+button{outline:0}
+
+.sound_only{display: block;text-indent:-9999999999px;
+      height:0}
+
+.inner{min-width:1024px;max-width:1280px;margin:0 auto;}   
+.headerinner{min-width:1633px;max-width:1833px;margin:0 auto;}
+
+
+/************** 네비 ************************/
+#header{position: relative; width: 100%; z-index: 9999;}
+#nav{margin-left: 26%;}
+#nav .depth1 {float:left; }
+
+#nav .depth1 > li {float:left; transition: 0.3s; }
+#nav .depth1 > li:hover{background-color: #F86E1A; }
+
+#nav .depth1 > li > a {display: block; width: 155px; 
+        text-align: center; font-size:1.3rem;color:#f7f4f4;
+        font-weight: bold;line-height:75px;}
+#nav .depth1 > li:hover > a:after{width:100%}
+
+#nav .depth1{position: relative;} 
+  
+#nav .nav_box {position:absolute;top:calc(2.2rem + 25px);top:75px;width:155px;
+             background-color:#fff;z-index:96;
+            display: none;
+            padding:10px 0; color:#848484;
+            
+            
+           }
+
+#nav .depth1>li:hover .nav_box{display: block; }    
+
+#nav .depth2{} 
+#nav .nav_box .depth2{width:100%;margin:0 auto;position: relative;
+                       text-align: center;
+                       padding-right: 130px;box-sizing: border-box;}
+#nav .nav_box .depth2:after{content: '';display: block;clear: both;}
+#nav .depth2 > li{display: inline-block;box-sizing: border-box;
+                padding:10px; width: 155px;}
+#nav .depth2 > li > a{font-size: 14px;}      
+#nav .nav_box .depth2 > li > a:hover{color: black; font-weight: 800;}         
+     
+
+#nav4 .depth2 > li:after{content:'';display: inline-block;width:5px;height:5px;
+      background-color:darkorange;border-radius: 50%;
+      margin-left:20px;transform:translate(0,-3px)}
+#nav4 .depth2 > li:last-child:after{display: none;}
+
+
+
+#header #logo{z-index: 80px;float: left; width: 100px; margin-left: 5%; }
+#header #logo a{vertical-align: middle;
+}
+
+#logo{ margin-top: 9px;}
+#logo img{width:100%; }
+
+
+#header #all{ width: 40px;;height:75px; 
+    float: right; margin-top: 19px;
+    margin-right: 80px;
+         }
+#header #all img{width: 100%;}
+
+
+/****************************************************/
+
+/*********************footer****************************/
+#footer{height: 167px; padding-top: 602px;}
+#footer ul {margin-top: 10px;}
+#footer ul:first-child {margin-top: 27px;}
+#footer ul li{display: inline;}
+#footer ul li{margin-top: 1000px;}
